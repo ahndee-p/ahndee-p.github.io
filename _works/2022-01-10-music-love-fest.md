@@ -1,10 +1,9 @@
 ---
-title: Music love fest
+title: DietMenus.com
 description: An alternative to paperback is the glossy cover, otherwise known as a dust cover, found on magazines, and comic books.
-category: Print Design
+category: Programmatic SEO
 date: 2022-01-10 08:01:35 +0300
-client: Music Fest
-role: Graphic Designer
+role: Founder & CEO
 image: '/images/work-1.jpg'
 image_caption: 'Photo by [Freepik](https://www.freepik.com/)'
 ---

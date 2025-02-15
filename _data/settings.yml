@@ -16,30 +16,25 @@ menu__settings:
       url: '/about/'
     - title: 'Work'
       url: '/work/'
-    - title: 'Writing'
+    - title: 'Blog'
       url: '/blog/'
-    - title: 'Pages'
-      submenu:
-      - url: '/contact/'
-        title: 'Contact'
-      - url: '/elements/'
-        title: 'Elements'
+    - title: 'Contact'
+      url: '/contact/'
+
 
 
 #-------------------------------
 # Author Settings
 author:
-  author__name: Jason Hill
-  author__bio: Hi, I'm Jason – Graphic Designer. I'm a creative and curious person who has a lot of experience and fond moments working with design, websites, and marketing.
-  author__avatar: '/images/01.jpg'
+  author__name: Andrew Perez
+  author__bio: Hi, I'm Andrew – a 12 year SEO leader working at the intersection of marketing, Artificial Intelligence and Machine Learning.
+  author__avatar: '/images/andrew.jpeg'
 
 social:
-- {icon: "ion-logo-twitter", link: "https://twitter.com"}
-- {icon: "ion-logo-facebook", link: "https://facebook.com"}
-- {icon: "ion-logo-instagram", link: "https://instagram.com"}
-- {icon: "ion-logo-pinterest", link: "https://pinterest.com"}
-- {icon: "ion-logo-github", link: "https://github.com"}
-- {icon: "ion-logo-vimeo", link: "https://vimeo.com"}
+- {icon: "ion-logo-linkedin", link: "http://linkedin.com/in/andr3wperez"}
+- {icon: "ion-logo-twitter", link: "https://x.com/andr3wperez"}
+- {icon: "ion-logo-github", link: "https://github.com/ahndee-p"}
+- {icon: "ion-logo-youtube", link: "https://www.youtube.com/@venturemedley"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -49,9 +44,9 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Hey everyone, I’m Jason Hill
-  hero__description: Hi, I'm Jason – Graphic Designer. I'm a creative and curious person who has a lot of experience and fond moments working with design, websites, and marketing.
-  hero__image: "/images/01-1.jpg"
+  hero__title: Hi everyone, I’m Andrew Perez.
+  hero__description: Hey, I'm Andrew – a 12 year SEO leader learning how to leverage machine learning and AI to build better organic traffic strategies and optimize SEO workflows and processes.
+  hero__image: "/images/ap-lecture.png"
 
 
 #-------------------------------
@@ -61,24 +56,24 @@ logos:
   logos__title: I’ve worked with some great сompanies
 
 logo__items:
-  - name: Google
-    link: "https://www.google.com/"
-    image: "/images/google.svg"
+  - name: Leaf Group
+    link: "https://www.linkedin.com/company/leafgroup"
+    image: "/images/leaf.svg"
 
-  - name: Spotify
-    link: "https://www.spotify.com/"
-    image: "/images/spotify.svg"
+  - name: SilverSea Cruises
+    link: "https://www.silversea.com/"
+    image: "/images/silversea-2.svg"
 
-  - name: Pinterest
-    link: "https://www.pinterest.com/"
-    image: "/images/pinterest.svg"
+  - name: OnPoint Global
+    link: "https://www.onpointglobal.com/"
+    image: "/images/onpoint.svg"
 
-  - name: Netlify
-    link: "https://www.netlify.com/"
-    image: "/images/netlify.svg"
+  - name: Corcoran Group
+    link: "https://www.corcoran.com/"
+    image: "/images/corcoran.svg"
 
-  - name: Apple
-    link: "https://www.apple.com/"
+  - name: Q Link Wireless
+    link: "https://www.qlinkwireless.com/"
     image: "/images/apple.svg"
 
   - name: Adobe
@@ -99,15 +94,15 @@ mailchimp:
 work:
   enable: true
   work__title: Work
-  work__description: I shows only the best websites and portfolios built completely with passion, simplicity & creativity!
+  work__description: Here are some projects I'm proud to have built and what skills I learned from each one.
 
 
 #-------------------------------
 # Testimonials Section
 testimonials:
-  enable: true
+  enable: false
 
-testimonial__title: Clients
+testimonial__title: Testimonials
 testimonial__description:
 
 testimonial__items:

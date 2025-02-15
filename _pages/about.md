@@ -1,9 +1,9 @@
 ---
 layout: page
 title: About
-description: I'm a creative and curious person who has a lot of experience and fond moments working with design, websites, and marketing.
+description: Hi, I'm Andrew – a 12 year SEO leader working at the intersection of digital marketing, Artificial Intelligence and Machine Learning.
 permalink: /about/
-image: '/images/01-2.jpg'
+image: '/images/ap-lecture.png'
 image_caption: 'Photo by [Bruce Dixon](https://unsplash.com/photos/3M9WJQVHzog) on [Unsplash](https://unsplash.com/)'
 ---
 

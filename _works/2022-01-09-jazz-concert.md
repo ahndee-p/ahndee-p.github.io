@@ -1,10 +1,10 @@
 ---
-title: Jazz concert
+title: Content Remixer
 description: An alternative to paperback is the glossy cover, otherwise known as a dust cover, found on magazines, and comic books.
-category: Book Cover
+category: AI Coding
 date: 2022-01-09 08:01:35 +0300
 client: Jazz International
-role: Designer
+role: Developer
 image: '/images/work-2.jpg'
 image_caption: 'Photo by [Freepik](https://www.freepik.com/)'
 ---
