@@ -4,12 +4,19 @@ title: About
 description: Hi, I'm Andrew – a 12 year SEO leader working at the intersection of digital marketing, Artificial Intelligence and Machine Learning.
 permalink: /about/
 image: '/images/ap-lecture.png'
-image_caption: 'Photo by [Bruce Dixon](https://unsplash.com/photos/3M9WJQVHzog) on [Unsplash](https://unsplash.com/)'
 ---
 
-Hymnals are books with collections of musical hymns that can typically be found in churches. Prayerbooks or missals are books that contain written prayers and are commonly carried by monks, nuns, and other devoted followers or clergy. Lap books are a learning tool created by students.
+My start in SEO came in 2010 right after graduating college but not how you might expect. 
 
-There are several other types of books which are not commonly found under this system. Albums are books for holding a group of items belonging to a particular theme, such as a set of photographs, card collections, and memorabilia. One common example is stamp albums, which are used by many hobbyists to protect and organize their collections of postage stamps. Such albums are often made using removable plastic pages held inside in a ringed binder or other similar holder. Picture books are books for children with pictures on every page and less text (or even no text).
+I was home for the summer applying for jobs in commercial real estate and finance, when my younger brother called me into his room to show me a forum website he had built that was earning a few hundred dollars a month from Google Adsense. 
+
+My plan had always been to work in Wall Street, until that moment it had never occurred to me the kind of money that could be made online by learning internet marketing. 
+
+That very day I asked my brother to teach me WordPress and through resources like Pat Flynn's Smart Passive Income, I was off to the races building niche affiliate websites and learning the basics of SEO and digital marketing. 
+
+Although I was self taught, I was able to land a job at a local wireless service provider as an SEO Specialist where I worked for the next four years **securing #1 rankings for competitive keywords** including "free cell phone" and "best cell phone plans". 
+
+The best part about this job was that my bosses really believed in continued education and they paid for many courses in SEO, PPC, analytics and social media management. They also paid for me to attend SEO conferences where I got to learn the latest strategies from incredible marketers like Ryan Deiss and Roland Frasier. 
 
 <div class="gallery-box">
   <div class="gallery">
@@ -20,19 +27,38 @@ There are several other types of books which are not commonly found under this s
   <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
 </div>
 
-Dummy books (or faux books) are books that are designed to imitate a real book by appearance to deceive people, some books may be whole with empty pages, others may be hollow or in other cases, there may be a whole panel carved with spines which are then painted to look like books, titles of some books may also be fictitious.
+After my time there I worked for a couple of local marketing agencies and started my own agency on the side providing SEO, PPC and social media to home services companies. 
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+During this time I learned to work with enterprise level clients and develop the project management, presentation and implementation skills needed to manage SEO campaigns in a large organization.
 
-The advent of paperback books in the 20th century led to an explosion of popular publishing. Paperback books made owning books affordable for many people. Paperback books often included works from genres that had previously been published mostly in pulp magazines. As a result of the low cost of such books and the spread of bookstores filled with them (in addition to the creation of a smaller market of extremely cheap used paperbacks) owning a private library ceased to be a status symbol for the rich.
+In 2017, I got my first opportunity to lead a team as the SEO Manager for a holding company that owned a portfolio of well known internet brands. 
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/103.jpg" loading="lazy">
-  </div>
-  <em>Photo by <a href="https://unsplash.com/photos/TMpQ5R9mbOc" target="_blank">Caroline Hernandez</a></em>
-</div>
+This was my first time working with websites that had hundreds of thousands of pages which really required me to develop my technical skills to tackle issues like website migration from drupal to wordpress, log file analysis using tools like Botify, and working with developers to improve crawlability by optimizing our site architecture.
 
-This form of the book chain has hardly changed since the eighteenth century, and has not always been this way. Thus, the author has asserted gradually with time, and the copyright dates only from the nineteenth century. For many centuries, especially before the invention of printing, each freely copied out books that passed through his hands, adding if necessary his own comments. Similarly, bookseller and publisher jobs have emerged with the invention of printing, which made the book an industrial product, requiring structures of production and marketing.
+I was able to train a content department of over 15 writers on pillar pages, entities and topical authority which led to a **traffic lift of over 200k organic sessions per month.**
 
-Paper was first made in China as early as 200 BC, and reached Europe through Muslim territories. At first made of rags, the industrial revolution changed paper-making practices, allowing for paper to be made out of wood pulp. Papermaking in Europe began in the 11th century, although vellum was also common there as page material up until the beginning of the 16th century, vellum being the more expensive and durable option.
+I also had the opportunity to hire and manage an in-house linkbuilding team while developing systems that allowed us to acquire over 100 links per month at less than $25 per link. 
+
+> This is the most interesting time to be in tech and I’ve never been more excited to leverage AI and machine learning in the SEO and digital marketing industries.
+
+After taking some time off to travel and work on my own passion projects during the pandemic, I was hired by Leaf Group as the SEO Lead for one of their many publishing brands (eHow, LiveStrong, Hunker, OnlyInYourState, etc). 
+
+As the lead for a publisher with over 150k articles and 50 new posts per day, I had to learn to do SEO at scale; working with massive datasets and focusing on systems thinking and how to develop efficient workflows and processes.
+
+The project during this time that I'm most proud of was an internal dashboard that replaced a spreadsheet approach to managing our content renovations. 
+
+This internal tool was used by a team of 50+ contractors and led to 40% increase in the output of pages renovated per month, as well as a **20% increase in organic traffic.**
+
+This was when my interest in machine learning really and AI really took off as I got to work closely with a team of data scientists and engineers to build internal tools that could classify, cluster and implement taxonomies for our content library. 
+
+As LLMs became more powerful I started learning how to incorporate them into our SEO processes to help with keyword research and content brief generation.
+
+That brings us to today, where I've just graduated from a program in Nocode AI and Machine Learning from MIT, where I learned to use AI and Machine Learning to make data-driven business decisions by understanding the theory and practical applications of supervised and unsupervised learning, neural networks, recommendation engines, computer vision and natural language processing using tools like RapidMiner. 
+
+I'm also leaning heavily into:
+
+- Automation software like Make and n8n
+- AI-assisted prototyping using tools like Cursor 
+- Building AI agents
+
+SEO is moving into the future rapidly and I've never been more excited to leverage these new skillsets in the SEO and digital marketing industry.

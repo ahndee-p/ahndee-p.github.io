@@ -76,9 +76,6 @@ logo__items:
     link: "https://www.qlinkwireless.com/"
     image: "/images/apple.svg"
 
-  - name: Adobe
-    link: "https://www.adobe.com/"
-    image: "/images/adobe.svg"
 
 #-------------------------------
 # Newsletter
