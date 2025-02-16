@@ -5,7 +5,7 @@ category: AI Coding
 date: 2022-01-09 08:01:35 +0300
 client: Jazz International
 role: Developer
-image: '/images/work-2.jpg'
+image: '/images/contentremixer.png'
 image_caption: 'Photo by [Freepik](https://www.freepik.com/)'
 ---
 
