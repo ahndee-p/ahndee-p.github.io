@@ -16,15 +16,14 @@ That very day I asked my brother to teach me WordPress and through resources lik
 
 Although I was self taught, I was able to land a job at a local wireless service provider as an SEO Specialist where I worked for the next four years **securing #1 rankings for competitive keywords** including "free cell phone" and "best cell phone plans". 
 
-The best part about this job was that my bosses really believed in continued education and they paid for many courses in SEO, PPC, analytics and social media management. They also paid for me to attend SEO conferences where I got to learn the latest strategies from incredible marketers like Ryan Deiss and Roland Frasier. 
+The best part about this job was that my bosses really believed in learning from the best in the industryand they paid for many courses in SEO, PPC, analytics and social media management. They also paid for me to attend SEO conferences where I got to learn the latest strategies from incredible marketers like Ryan Deiss and Roland Frasier. 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/100.jpg" loading="lazy">
-    <img src="/images/101.jpg" loading="lazy">
-    <img src="/images/102.jpg" loading="lazy">
+    <img src="/images/ap-coding.png" loading="lazy">
+    <img src="/images/garyv.jpg" loading="lazy">
+    <img src="/images/andrew.jpeg" loading="lazy">
   </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
 </div>
 
 After my time there I worked for a couple of local marketing agencies and started my own agency on the side providing SEO, PPC and social media to home services companies. 

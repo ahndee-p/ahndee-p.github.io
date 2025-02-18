@@ -1,32 +1,39 @@
 ---
 title: Content Remixer
-description: An alternative to paperback is the glossy cover, otherwise known as a dust cover, found on magazines, and comic books.
+description: Micro SaaS to repurpose content for social media. 
 category: AI Coding
 date: 2022-01-09 08:01:35 +0300
-client: Jazz International
 role: Developer
 image: '/images/contentremixer.png'
-image_caption: 'Photo by [Freepik](https://www.freepik.com/)'
+
 ---
 
-Hardcover books have a stiff binding. Paperback books have cheaper, flexible covers which tend to be less durable. An alternative to paperback is the glossy cover, otherwise known as a dust cover, found on magazines, and comic books. Spiral-bound books are bound by spirals made of metal or plastic. Examples of spiral-bound books include teachers' manuals and puzzle books (crosswords, sudoku).
+Content Remixer is the first project I created while taking Nat Eliason’s course on building your own apps with AI coding. 
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/work-1-2.jpg" loading="lazy" alt="Project">
-    <img src="/images/work-1-3.jpg" loading="lazy" alt="Project">
-  </div>
-  <em>Photo by <a href="https://www.freepik.com/" target="_blank">Freepik</a></em>
-</div>
+The app itself is nothing special; what gets me excited is the skills I’ve gained through the course in rapidly prototyping ideas for fully functioning web apps. 
 
-There are several other types of books which are not commonly found under this system. Albums are books for holding a group of items belonging to a particular theme, such as a set of photographs, card collections, and memorabilia. One common example is stamp albums, which are used by many hobbyists to protect and organize their collections of postage stamps. Such albums are often made using removable plastic pages held inside in a ringed binder or other similar holder. Picture books are books for children with pictures on every page and less text (or even no text).
+I’ve tried learning to code many times on my own before the rise of AI code editors like Cursor. 
+Inevitably I’d always abandon it because I wasn’t building anything useful or intriguing. 
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+AI-assisted coding has been a complete game changer and after taking this course I finally feel comfortable with so many aspects of programming that blocked my progress in the past like:
 
-Hymnals are books with collections of musical hymns that can typically be found in churches. Prayerbooks or missals are books that contain written prayers and are commonly carried by monks, nuns, and other devoted followers or clergy. Lap books are a learning tool created by students.
+- How to get an IDE setup
+- How to use the terminal
+- How to work with GitHub repositories
+- How to work with a node project and use npm
+- How to deploy to a project to a local dev server
+- How does a basic React app work?
+- How to use LLMs through API requests
+- How to connect a database to a web app
 
-<p><iframe src="https://player.vimeo.com/video/148003889?h=d36b8b4cbb" loading="lazy" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+Of course, Cursor is doing most of the heavy lifting by writing all of the code and creating my file structures; I’m just prompting it and giving it direction.
 
-Dummy books (or faux books) are books that are designed to imitate a real book by appearance to deceive people, some books may be whole with empty pages, others may be hollow or in other cases, there may be a whole panel carved with spines which are then painted to look like books,  titles of some books may also be fictitious.
+ > Yet even in that limited capacity, having a front row seat to an expert AI programmer creating my project step-by-step has helped me digest 10x more practical coding knowledge than I ever got in all of my years of taking Javascript courses combined,
+ 
+In this course, I’m using Cursor to build web apps but there are so many other directions I could see myself taking this newfound skillset in the SEO world. 
 
-The advent of paperback books in the 20th century led to an explosion of popular publishing. Paperback books made owning books affordable for many people. Paperback books often included works from genres that had previously been published mostly in pulp magazines. As a result of the low cost of such books and the spread of bookstores filled with them (in addition to the creation of a smaller market of extremely cheap used paperbacks) owning a private library ceased to be a status symbol for the rich.
+I could use it to deploy data science models in python, create WordPress plugins that provide missing functionality, finally I can improve productivity by building scripts that automate repetitive work. 
+
+As an idea guy who was always frustrated by having to hit UpWork to see my ideas come to life, learning to code using AI-assisted editors has opened up a world of creativity that has reinvigorated my passion for digital products and tech in general. 
+
+P.S. this website was built with my newfound skills using a static site generator called Jekyll. I write all my blog posts in markdown, it’s blazing fast and best of all I pay ZERO dollars for hosting since I can use GitHub pages now to host my project sites for free. 
