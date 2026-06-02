@@ -3,6 +3,7 @@ layout: post
 title: How I Built an Automated Expired Domain Analyzer for PBN Prospecting
 description: A two-workflow n8n system that uses Moz, Firecrawl, and GPT-4.1 to classify expired domain backlinks by editorial quality — so DA scores actually mean something.
 date: 2026-06-02 09:00:00 +0000
+image: /images/expired-domain-analyzer.png
 image_caption:
 tags: [automation, seo, n8n]
 ---
