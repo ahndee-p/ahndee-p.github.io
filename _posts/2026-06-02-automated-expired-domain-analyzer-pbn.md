@@ -198,4 +198,8 @@ The Backlinks table lets me drill into any specific domain and see exactly what'
 
 ---
 
-The full workflow JSON is available if you want to import it directly into your own n8n instance. Both workflows need a Moz API token, a Firecrawl account, an OpenAI API key, and Airtable credentials to run.
+The full workflow JSON for both workflows is on GitHub — you can import them directly into your own n8n instance.
+
+**[github.com/ahndee-p/expired-domain-analyzer](https://github.com/ahndee-p/expired-domain-analyzer)**
+
+You'll need a Moz API token, a Firecrawl account, an OpenAI API key, and Airtable credentials to run it.
