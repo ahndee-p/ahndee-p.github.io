@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Akio
+title: Andrew Perez — Technical SEO & AI Automation Engineer
 logo: '/images/andr3wperez.png'
-description: Creative Portfolio Theme for Jekyll.
+description: 15-year SEO leader and AI automation engineer building agent systems that scale organic growth across traditional search and AI engines like ChatGPT.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -14,7 +14,7 @@ menu__settings:
       url: '/'
     - title: 'About'
       url: '/about/'
-    - title: 'Work'
+    - title: 'Projects'
       url: '/work/'
     - title: 'Blog'
       url: '/blog/'
@@ -27,7 +27,7 @@ menu__settings:
 # Author Settings
 author:
   author__name: Andrew Perez
-  author__bio: Hi, I'm Andrew – a 12 year SEO leader working at the intersection of marketing, Artificial Intelligence and Machine Learning.
+  author__bio: SEO leader and GTM engineer who builds AI-native growth systems at scale.
   author__avatar: '/images/andrew.jpeg'
 
 social:
@@ -45,7 +45,7 @@ social:
 hero:
   enable: true
   hero__title: Hi everyone, I’m Andrew Perez.
-  hero__description: Hey, I'm Andrew – a 12 year SEO leader learning how to leverage machine learning and AI to build better organic traffic strategies and optimize SEO workflows and processes.
+  hero__description: 15 years driving organic growth for publishers, startups, and Fortune 500s — now building the AI systems that scale it. Deep craft, modern search, and the architecture to run it.
   hero__image: "/images/ap-lecture.png"
 
 
@@ -90,8 +90,8 @@ mailchimp:
 # Work Settings
 work:
   enable: true
-  work__title: Work
-  work__description: Here are some projects I'm proud to have built and what skills I learned from each one.
+  work__title: Projects
+  work__description: Things I've built — from programmatic SEO directories to autonomous AI content engines. What each one does, and the results it drove.
 
 
 #-------------------------------
@@ -176,7 +176,7 @@ footer__background__image: "/images/techbg.jpg"
 # Contact Settings
 contact:
   email: andrew.perez108@gmail.com # Add your form_id
-  description: I'm always looking for new opportunities to learn and build. If you have a project in mind, please reach out!
+  description: I build AI-native growth systems for brands and teams. Got a technical SEO or automation challenge — or a role you think I'd be great for? Let's talk.
 
 # NOTE
 # Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.

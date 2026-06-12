@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: Hi, I'm Andrew – a 12 year SEO leader working at the intersection of digital marketing, Artificial Intelligence and Machine Learning.
+description: SEO leader and GTM engineer with 15 years driving organic growth. I build AI agent systems that scale technical SEO and modern AI search.
 permalink: /about/
 image: '/images/ap-lecture.png'
 ---
@@ -54,10 +54,10 @@ As LLMs became more powerful I started learning how to incorporate them into our
 
 That brings us to today, where I've just graduated from a program in Nocode AI and Machine Learning from MIT, where I learned to use AI and Machine Learning to make data-driven business decisions by understanding the theory and practical applications of supervised and unsupervised learning, neural networks, recommendation engines, computer vision and natural language processing using tools like RapidMiner. 
 
-I'm also leaning heavily into:
+Today, I build:
 
-- Automation software like Make and n8n
-- AI-assisted prototyping using tools like Cursor 
-- Building AI agents
+- Autonomous AI agent systems that run research, content production, and technical auditing
+- Generative Engine Optimization that earns visibility inside ChatGPT and Google AI Overviews 
+- Automation workflows in Make, n8n, and Claude Code that scale SEO without scaling headcount
 
-SEO is moving into the future rapidly and I've never been more excited to leverage these new skillsets in the SEO and digital marketing industry.
+SEO is moving into the future fast — and I'm building for where it's going, not just keeping up.
