@@ -1,14 +1,13 @@
 ---
-layout: post
-title: How I Built an Automated Expired Domain Analyzer for PBN Prospecting
+title: AI-Scored Expired Domain Analyzer
 description: A two-workflow n8n system that uses Moz, Firecrawl, and GPT-4.1 to classify expired domain backlinks by editorial quality — so DA scores actually mean something.
+category: AI Automation
 date: 2026-06-02 09:00:00 +0000
+role: AI Automation Engineer
 image: /images/expired-domain-analyzer.png
-image_caption:
-tags: [automation, seo, n8n]
 ---
 
-Finding good expired domains for a PBN used to mean hours of manual work — pulling backlink data, eyeballing domain authority scores, trying to figure out whether a domain's links were actually editorial or just directory spam. I built an n8n automation that does all of that end to end, using Moz for backlink data, Firecrawl for scraping, and GPT-4.1 for quality classification.
+Finding good expired domains used to mean hours of manual work — pulling backlink data, eyeballing domain authority scores, trying to figure out whether a domain's links were actually editorial or just directory spam. I built an n8n automation that does all of that end to end, using Moz for backlink data, Firecrawl for scraping, and GPT-4.1 for quality classification.
 
 Here's exactly how it works.
 
@@ -18,7 +17,7 @@ Here's exactly how it works.
 
 Most expired domain tools show you a DA and a backlink count and call it a day. But DA alone doesn't tell you what actually matters: *why does this domain have authority?* Is it because the New York Times cited it in an editorial, or because someone spammed it into 200 directories in 2011?
 
-Two domains can both have a DA of 65. One has 8 tier-1 editorial links from real publications. The other has 40 directory submissions and a handful of forum comments. For PBN purposes, those are completely different assets — but they look identical in a raw DA lookup.
+Two domains can both have a DA of 65. One has 8 tier-1 editorial links from real publications. The other has 40 directory submissions and a handful of forum comments. For link-building purposes, those are completely different assets — but they look identical in a raw DA lookup.
 
 This workflow solves that by actually looking at each backlink source, understanding what kind of content it is, and scoring accordingly.
 

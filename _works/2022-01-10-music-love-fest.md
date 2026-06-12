@@ -1,5 +1,5 @@
 ---
-title: DietMenus.com
+title: DietMenus, Programmatic Directory
 description: Programmatic SEO directory to find restaurant meals that fit your dietary needs.
 category: Programmatic SEO
 date: 2022-01-10 08:01:35 +0300
