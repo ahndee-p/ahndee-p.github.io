@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Andrew Perez — Technical SEO & AI Automation Engineer
+title: Andrew Perez — Technical SEO Leader | Agentic SEO & GEO
 logo: '/images/andr3wperez.png'
-description: 15-year SEO leader and AI automation engineer building agent systems that scale organic growth across traditional search and AI engines like ChatGPT.
+description: Technical SEO Leader, 15 years across publishers, marketplaces and Fortune 500 brands. I build agentic pipelines and GEO programs that earn citation in LLM answers.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -27,7 +27,7 @@ menu__settings:
 # Author Settings
 author:
   author__name: Andrew Perez
-  author__bio: Technical SEO who builds AI agent systems to run the work — crawls, schema, entities and AI search visibility.
+  author__bio: Technical SEO Leader. I build agentic pipelines and GEO/AEO programs that earn citation inside LLM answers. 15 years in search.
   author__avatar: '/images/andrew.jpeg'
 
 
@@ -41,34 +41,42 @@ author:
 # single source of truth for identity, so the descriptor can never drift between
 # the title, the meta description, and the structured data.
 #
-# RULE: the descriptor below must appear IDENTICALLY on LinkedIn, GitHub, X, and
-# every repo README. Entity consolidation dies on synonyms.
+# RULE: the role and specialty phrases below must appear IDENTICALLY on LinkedIn,
+# GitHub, X, YouTube and every repo README. Entity consolidation dies on synonyms.
+# The paste-ready copy for those profiles lives in AhndeeOS at
+# projects/personal-brand-geo/context/profile-copy.md — keep the two in sync.
 entity:
   name: Andrew Perez
   handle: andr3wperez           # the real disambiguator — consistent across every profile
-  job_title: Technical SEO Engineer
-  descriptor: agentic technical SEO
-  # One canonical sentence. Reuse verbatim everywhere.
-  bio: Andrew Perez does agentic technical SEO — AI-native search work run by
-    Claude Code agents instead of by hand. 15 years in search, most of it technical.
-  # Specifically for telling the AI engines which Andrew Perez this is.
-  disambiguation: Technical SEO and AI automation engineer based in Portland, Oregon.
-    Not the journalist of the same name.
+  job_title: Technical SEO Leader
+  # The two differentiator phrases. Say them the same way everywhere.
+  specialties: agentic pipelines, GEO/AEO programs that earn citation inside LLM answers,
+    data-driven analysis of crawl and search data
+  # Schema `description`. Third person, because it describes the entity.
+  bio: Technical SEO Leader with 15 years across publishers, marketplaces and Fortune 500
+    brands. Builds agentic pipelines and GEO/AEO programs that earn citation inside LLM answers.
+  # Tells the AI engines WHICH Andrew Perez this is — with facts unique to him rather
+  # than by naming anyone else.
+  disambiguation: Technical SEO and AI systems engineer in Portland, Oregon. Owner of the
+    programmatic nutrition directory DietMenus.com. Goes by the handle andr3wperez.
   image: '/images/andrew.jpeg'
   locality: Portland
   region: OR
   country: US
   alumni_of: MIT Professional Education
   alumni_program: No-Code AI and Machine Learning
+  # Both the spelled-out phrase and the acronym, in one entry each — people and
+  # recruiters search both forms, and separate acronym-only entries read as padding.
   knows_about:
     - Technical SEO
-    - Generative engine optimization
-    - Answer engine optimization
+    - Generative engine optimization (GEO)
+    - Answer engine optimization (AEO)
     - Programmatic SEO
     - Schema.org structured data
     - Entity SEO
+    - Crawl architecture
+    - CMS migrations
     - Log file analysis
-    - Site migrations
     - AI agents
     - Python
     - BigQuery
@@ -78,7 +86,10 @@ entity:
     - https://www.linkedin.com/in/andr3wperez
     - https://x.com/andr3wperez
     - https://github.com/ahndee-p
-    - https://www.youtube.com/@venturemedley
+    # The personal channel ("Andrew Perez"), not @venturemedley. Venture Medley is a
+    # separate brand entity, so it isn't a `sameAs` for the person. Both verified live
+    # 2026-09-11. ⬜ github URL changes to /andr3wperez after the account rename.
+    - https://www.youtube.com/@andr3wperez
 
 social:
 - {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/andr3wperez"}
