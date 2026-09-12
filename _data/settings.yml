@@ -1,12 +1,13 @@
 #-------------------------------
 # Site Settings
-# THE TAGLINE. "agentic systems for search & ai visibility" goes in the title / most
-# prominent slot on EVERY platform, lowercase, as a deliberate brand style. Andrew's call
-# 2026-09-11, and it supersedes the earlier rule that reserved lowercase for the hero.
-# The name stays in front of it here because "Andrew Perez" is the Ring 1 query — a title
-# tag is the one place the tagline can't stand alone.
-# 57 characters, so it displays without truncation.
-title: Andrew Perez — agentic systems for search & ai visibility
+# THE TAGLINE. "Agentic systems for Search & AI visibility" goes in the title / most
+# prominent slot on EVERY platform. Casing is exactly as Andrew published it on LinkedIn
+# 2026-09-11 — "Search" and "AI" capitalised. This is the final form: the all-lowercase
+# variant is retired, because lowercase "ai" reads as a typo to anyone who doesn't already
+# know it's a style choice.
+# The name leads here because "Andrew Perez" is the query people type, and a title tag is
+# the one place the tagline can't stand alone. 57 characters, so it won't truncate.
+title: Andrew Perez — Agentic systems for Search & AI visibility
 logo: '/images/andr3wperez.png'
 description: Technical SEO leader building agentic systems that automate search, content, and AI visibility—from technical infrastructure to LLM citations.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
