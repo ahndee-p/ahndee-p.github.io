@@ -54,12 +54,15 @@ author:
 entity:
   name: Andrew Perez
   handle: andr3wperez           # the real disambiguator — consistent across every profile
-  # Real titles only. "Leader" isn't one, so it stays in prose and out of `jobTitle`,
-  # which engines map to known occupations. Both of these are Andrew's own words
-  # ("technical SEO leader and AI systems architect") in their titled form.
+  # Real titles only — "Leader" isn't one, so it stays in prose and out of `jobTitle`,
+  # which engines map to known occupations.
+  # Manager, not Lead: it's what Andrew published in his LinkedIn headline 2026-09-11, and
+  # this field has to match that exactly. "AI Systems Architect" came out at the same time —
+  # he dropped it from his bio opener — so the discipline now lives in `knows_about` as a
+  # capability rather than in `jobTitle` as a title. Must stay a list; the template calls
+  # `.first` on it for hasOccupation.
   job_title:
-    - Technical SEO Lead
-    - AI Systems Architect
+    - Technical SEO Manager
   # Schema `description` ← Andrew's positioning statement, verbatim, the two paragraphs
   # joined. States the coined term AND the matchable vocabulary in one place.
   bio: I’m an Agentic Technical SEO leader building AI systems that automate the
@@ -72,8 +75,8 @@ entity:
   # No DietMenus here — Andrew doesn't want ownership of it asserted in his schema
   # (2026-09-11). The disambiguating work is carried by occupation + city + the handle,
   # which is weaker than naming an owned property but still specific.
-  disambiguation: Technical SEO lead and AI systems architect in Portland, Oregon. Goes by
-    the handle andr3wperez across every platform.
+  disambiguation: Technical SEO manager in Portland, Oregon. Goes by the handle andr3wperez
+    across every platform.
   image: '/images/andrew.jpeg'
   locality: Portland
   region: OR
@@ -97,6 +100,7 @@ entity:
     - Enterprise SEO
     - Search intelligence
     - Content operations
+    - AI systems architecture   # a capability, not a title — see the job_title note above
     - AI agents
     - Python
     - BigQuery
