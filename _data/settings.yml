@@ -1,8 +1,11 @@
 #-------------------------------
 # Site Settings
-title: Andrew Perez — Technical SEO Leader | Agentic SEO & GEO
+# Title Case on "Agentic Technical SEO" because it's the coined term. The all-lowercase
+# styling of the phrase lives in the hero, where it reads as design; everywhere a stranger
+# might read it cold (title tags, SERPs, profiles) it's Title Case.
+title: Andrew Perez — Agentic Technical SEO & AI Visibility
 logo: '/images/andr3wperez.png'
-description: Technical SEO Leader, 15 years across publishers, marketplaces and Fortune 500 brands. I build agentic pipelines and GEO programs that earn citation in LLM answers.
+description: Technical SEO leader building agentic systems that automate search, content, and AI visibility—from technical infrastructure to LLM citations.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -27,7 +30,7 @@ menu__settings:
 # Author Settings
 author:
   author__name: Andrew Perez
-  author__bio: Technical SEO Leader. I build agentic pipelines and GEO/AEO programs that earn citation inside LLM answers. 15 years in search.
+  author__bio: Technical SEO leader building agentic systems that automate search, content, and AI visibility—from technical infrastructure to LLM citations.
   author__avatar: '/images/andrew.jpeg'
 
 
@@ -48,17 +51,23 @@ author:
 entity:
   name: Andrew Perez
   handle: andr3wperez           # the real disambiguator — consistent across every profile
-  job_title: Technical SEO Leader
-  # The two differentiator phrases. Say them the same way everywhere.
-  specialties: agentic pipelines, GEO/AEO programs that earn citation inside LLM answers,
-    data-driven analysis of crawl and search data
-  # Schema `description`. Third person, because it describes the entity.
-  bio: Technical SEO Leader with 15 years across publishers, marketplaces and Fortune 500
-    brands. Builds agentic pipelines and GEO/AEO programs that earn citation inside LLM answers.
+  # Real titles only. "Leader" isn't one, so it stays in prose and out of `jobTitle`,
+  # which engines map to known occupations. Both of these are Andrew's own words
+  # ("technical SEO leader and AI systems architect") in their titled form.
+  job_title:
+    - Technical SEO Lead
+    - AI Systems Architect
+  # Schema `description` ← Andrew's positioning statement, verbatim, the two paragraphs
+  # joined. States the coined term AND the matchable vocabulary in one place.
+  bio: I’m an Agentic Technical SEO leader building AI systems that automate the
+    infrastructure behind search and AI visibility. I combine 15 years of technical SEO
+    experience with agentic systems architecture to automate technical SEO, search
+    intelligence, content operations, and AI visibility programs at scale.
   # Tells the AI engines WHICH Andrew Perez this is — with facts unique to him rather
-  # than by naming anyone else.
-  disambiguation: Technical SEO and AI systems engineer in Portland, Oregon. Owner of the
-    programmatic nutrition directory DietMenus.com. Goes by the handle andr3wperez.
+  # than by naming anyone else. Deliberately not one of Andrew's copy blocks: its job is
+  # separating him from the other three Andrew Perezes, not positioning him.
+  disambiguation: Technical SEO lead and AI systems architect in Portland, Oregon. Owner of
+    the programmatic nutrition directory DietMenus.com. Goes by the handle andr3wperez.
   image: '/images/andrew.jpeg'
   locality: Portland
   region: OR
@@ -68,15 +77,20 @@ entity:
   # Both the spelled-out phrase and the acronym, in one entry each — people and
   # recruiters search both forms, and separate acronym-only entries read as padding.
   knows_about:
+    - Agentic Technical SEO      # the coined term, stated first
     - Technical SEO
     - Generative engine optimization (GEO)
     - Answer engine optimization (AEO)
+    - LLM visibility
     - Programmatic SEO
     - Schema.org structured data
     - Entity SEO
     - Crawl architecture
     - CMS migrations
-    - Log file analysis
+    - International SEO
+    - Enterprise SEO
+    - Search intelligence
+    - Content operations
     - AI agents
     - Python
     - BigQuery
@@ -105,8 +119,12 @@ social:
 # Hero Settings
 hero:
   enable: true
+  # hero__title is the homepage <h1>. Keeping the name in it is deliberate — with three
+  # other Andrew Perezes out there, the one H1 on the most-linked page should say who this is.
   hero__title: Hi everyone, I’m Andrew Perez.
-  hero__description: 15 years driving organic growth for publishers, startups, and Fortune 500s — now building the AI systems that scale it. Deep craft, modern search, and the architecture to run it.
+  # Andrew's differentiator, verbatim. It's the strongest opening line he has: it names the
+  # thing everyone else is doing and then says what he does instead.
+  hero__description: Most people positioning around “AI SEO” are talking about using AI to make content or get found on llms. I'm talking about using agents to build and operate the machinery behind organic visibility.
   hero__image: "/images/ap-lecture.png"
 
 

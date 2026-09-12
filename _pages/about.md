@@ -1,10 +1,28 @@
 ---
 layout: page
 title: About
-description: 15 years in search, most of it technical. Now I do agentic technical SEO, where the crawls, schema and entity work get run by AI agents instead of by hand.
+description: I’m an Agentic Technical SEO leader building AI systems that automate the infrastructure behind search and AI visibility.
 permalink: /about/
 image: '/images/ap-lecture.png'
 ---
+
+I’m a technical SEO leader and AI systems architect focused on building the systems that make organic visibility scalable.
+
+For 15 years, I’ve worked across publishers, marketplaces, and Fortune 500 brands, starting with the technical foundations of SEO: large-scale CMS migrations, crawl architecture, structured data, international and enterprise SEO, and the infrastructure required to make enormous websites discoverable and understandable to search engines.
+
+Over time, I moved from executing SEO programs to building the tooling and programmatic systems that operate them. Rather than treating technical SEO as a collection of recurring manual tasks, I build systems that continuously analyze crawl and search data, identify problems, execute changes, manage structured data and entities, and keep technical infrastructure aligned with how search evolves.
+
+The same philosophy now extends to AI search.
+
+AEO and GEO are often framed as a new set of optimization tactics: make your content easier for an LLM to understand, then try to get cited. I take a broader view. If an AI system is deciding what sources to trust, the answer isn't limited to optimizing the website it visits. Visibility can be influenced by the entire ecosystem of information an AI system encounters—including websites, YouTube, reviews, LinkedIn, publishers, communities, structured data, and other authoritative sources.
+
+So I build agentic programs that operate across that ecosystem: systems for technical SEO, content, search intelligence, entity development, citation discovery, and distribution. The goal isn't simply to produce more content or automate individual SEO tasks. It's to build an operating system for organic and AI visibility that can continuously learn, adapt, and execute with far less manual intervention.
+
+That’s the intersection I work in.
+
+Most SEOs understand search but can't build. Most engineers can build but don't understand search. I bring both disciplines together—technical SEO strategy and AI systems architecture—to build autonomous systems that turn search expertise into scalable operations.
+
+## How I got here
 
 My start in SEO came in 2010 right after graduating college but not how you might expect. 
 

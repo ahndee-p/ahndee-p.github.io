@@ -44,7 +44,17 @@
         relationship is already stated from the page side: / and /about/ both carry
         "mainEntity" → this Person.
       {%- endcomment -%}
+      {%- comment -%}
+        jobTitle is a list in settings.yml, so this emits an array. Real titles only —
+        engines map this field to known occupations, and "leader" isn't a title. The coined
+        term "Agentic Technical SEO" is carried by `description` and `knowsAbout` instead.
+      {%- endcomment -%}
       "jobTitle": {{ e.job_title | jsonify }},
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": {{ e.job_title.first | jsonify }},
+        "skills": {{ e.knows_about | jsonify }}
+      },
       "description": {{ e.bio | strip_newlines | normalize_whitespace | jsonify }},
       "disambiguatingDescription": {{ e.disambiguation | strip_newlines | normalize_whitespace | jsonify }},
       "image": {
