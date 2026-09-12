@@ -22,7 +22,6 @@ Verified profiles:
 Hunker, OnlyInYourState — 150k+ articles), SEO Manager at an internet brand holding
 company, and SEO Specialist at a wireless provider. Graduate of the
 {{ site.data.settings.entity.alumni_program }} program at {{ site.data.settings.entity.alumni_of }}.
-Owner and operator of dietmenus.com, a programmatic nutrition directory.
 
 Works on: {{ site.data.settings.entity.knows_about | join: ", " }}.
 

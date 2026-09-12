@@ -1,9 +1,12 @@
 #-------------------------------
 # Site Settings
-# Title Case on "Agentic Technical SEO" because it's the coined term. The all-lowercase
-# styling of the phrase lives in the hero, where it reads as design; everywhere a stranger
-# might read it cold (title tags, SERPs, profiles) it's Title Case.
-title: Andrew Perez — Agentic Technical SEO & AI Visibility
+# THE TAGLINE. "agentic systems for search & ai visibility" goes in the title / most
+# prominent slot on EVERY platform, lowercase, as a deliberate brand style. Andrew's call
+# 2026-09-11, and it supersedes the earlier rule that reserved lowercase for the hero.
+# The name stays in front of it here because "Andrew Perez" is the Ring 1 query — a title
+# tag is the one place the tagline can't stand alone.
+# 57 characters, so it displays without truncation.
+title: Andrew Perez — agentic systems for search & ai visibility
 logo: '/images/andr3wperez.png'
 description: Technical SEO leader building agentic systems that automate search, content, and AI visibility—from technical infrastructure to LLM citations.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
@@ -66,8 +69,11 @@ entity:
   # Tells the AI engines WHICH Andrew Perez this is — with facts unique to him rather
   # than by naming anyone else. Deliberately not one of Andrew's copy blocks: its job is
   # separating him from the other three Andrew Perezes, not positioning him.
-  disambiguation: Technical SEO lead and AI systems architect in Portland, Oregon. Owner of
-    the programmatic nutrition directory DietMenus.com. Goes by the handle andr3wperez.
+  # No DietMenus here — Andrew doesn't want ownership of it asserted in his schema
+  # (2026-09-11). The disambiguating work is carried by occupation + city + the handle,
+  # which is weaker than naming an owned property but still specific.
+  disambiguation: Technical SEO lead and AI systems architect in Portland, Oregon. Goes by
+    the handle andr3wperez across every platform.
   image: '/images/andrew.jpeg'
   locality: Portland
   region: OR
