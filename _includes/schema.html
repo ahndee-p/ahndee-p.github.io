@@ -1,0 +1,176 @@
+{%- comment -%}
+  JSON-LD entity graph. Driven entirely by `entity:` in _data/settings.yml.
+
+  THE POINT: every page emits the SAME Person node under the SAME @id
+  ({{ site.url }}/#andrew) and then *references* it by @id instead of redescribing it.
+  That's what tells search and AI engines the author of a post, the creator of a
+  project, and the person on the about page are one entity — and which "Andrew Perez"
+  that is. Redescribing the person on each page (the common mistake) creates several
+  weakly-linked entities instead of one strong one.
+
+  Node types by page:
+    /          → ProfilePage   (strongest entity signal, on the most-linked page)
+    /about/    → AboutPage
+    _posts     → BlogPosting          author → Person
+    _works     → CreativeWork, or SoftwareSourceCode when front matter has `repo:`
+    other      → WebPage
+  Inner pages also get a BreadcrumbList.
+{%- endcomment -%}
+{%- assign e = site.data.settings.entity -%}
+{%- assign person_id = site.url | append: '/#andrew' -%}
+{%- assign site_id = site.url | append: '/#website' -%}
+{%- assign page_url = page.url | replace: 'index.html', '' | absolute_url -%}
+{%- assign page_id = page_url | append: '#webpage' -%}
+{%- if page.url == '/' -%}
+  {%- assign page_type = 'ProfilePage' -%}
+{%- elsif page.url contains '/about' -%}
+  {%- assign page_type = 'AboutPage' -%}
+{%- else -%}
+  {%- assign page_type = 'WebPage' -%}
+{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ e.name | jsonify }},
+      "alternateName": {{ e.handle | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      {%- comment -%}
+        No `mainEntityOfPage` here on purpose. It would reference the homepage node,
+        which doesn't exist in the graph of any other page — a dangling @id. The
+        relationship is already stated from the page side: / and /about/ both carry
+        "mainEntity" → this Person.
+      {%- endcomment -%}
+      "jobTitle": {{ e.job_title | jsonify }},
+      "description": {{ e.bio | strip_newlines | normalize_whitespace | jsonify }},
+      "disambiguatingDescription": {{ e.disambiguation | strip_newlines | normalize_whitespace | jsonify }},
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ e.image | absolute_url | jsonify }}
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": {{ e.locality | jsonify }},
+        "addressRegion": {{ e.region | jsonify }},
+        "addressCountry": {{ e.country | jsonify }}
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": {{ e.alumni_of | jsonify }}
+      },
+      "knowsAbout": {{ e.knows_about | jsonify }},
+      "sameAs": {{ e.same_as | jsonify }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site_id | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ site.data.settings.title | jsonify }},
+      "description": {{ site.data.settings.description | jsonify }},
+      "inLanguage": "en-US",
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "author": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": {{ page_type | jsonify }},
+      "@id": {{ page_id | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "name": {{ page.title | default: site.data.settings.title | jsonify }},
+      {% if page.description %}"description": {{ page.description | strip_html | strip_newlines | jsonify }},
+      {% endif %}"isPartOf": { "@id": {{ site_id | jsonify }} },
+      "inLanguage": "en-US",
+      {% if page_type == 'ProfilePage' or page_type == 'AboutPage' %}"mainEntity": { "@id": {{ person_id | jsonify }} }{% else %}"about": { "@id": {{ person_id | jsonify }} }{% endif %}
+    }
+    {%- comment -%} ---------- blog posts ---------- {%- endcomment -%}
+    {%- if page.collection == 'posts' %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ page_url | append: '#article' | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "url": {{ page_url | jsonify }},
+      {% if page.description %}"description": {{ page.description | strip_html | strip_newlines | jsonify }},
+      {% endif %}{% if page.image %}"image": {{ page.image | absolute_url | jsonify }},
+      {% endif %}"datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ page_id | jsonify }} },
+      "isPartOf": { "@id": {{ site_id | jsonify }} },
+      "wordCount": {{ page.content | strip_html | number_of_words }},
+      "inLanguage": "en-US"
+      {%- if page.tags and page.tags.size > 0 %},
+      "keywords": {{ page.tags | join: ', ' | jsonify }}
+      {%- endif %}
+    }
+    {%- endif -%}
+    {%- comment -%} ---------- project / work pages ---------- {%- endcomment -%}
+    {%- if page.collection == 'works' %},
+    {
+      "@type": {% if page.repo %}"SoftwareSourceCode"{% else %}"CreativeWork"{% endif %},
+      "@id": {{ page_url | append: '#work' | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "url": {{ page_url | jsonify }},
+      {% if page.description %}"description": {{ page.description | strip_html | strip_newlines | jsonify }},
+      {% endif %}{% if page.image %}"image": {{ page.image | absolute_url | jsonify }},
+      {% endif %}{% if page.repo %}"codeRepository": {{ page.repo | jsonify }},
+      {% endif %}{% if page.category %}"genre": {{ page.category | jsonify }},
+      {% endif %}"dateCreated": {{ page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "creator": { "@id": {{ person_id | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ page_id | jsonify }} },
+      "isPartOf": { "@id": {{ site_id | jsonify }} },
+      "inLanguage": "en-US"
+    }
+    {%- endif -%}
+    {%- comment -%} ---------- breadcrumbs on inner pages ---------- {%- endcomment -%}
+    {%- if page.url != '/' %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ page_url | append: '#breadcrumb' | jsonify }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ site.url | append: '/' | jsonify }}
+        }
+        {%- if page.collection == 'posts' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Writing",
+          "item": {{ '/blog/' | absolute_url | jsonify }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | jsonify }}
+        }
+        {%- elsif page.collection == 'works' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projects",
+          "item": {{ '/work/' | absolute_url | jsonify }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | jsonify }}
+        }
+        {%- else %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | default: 'Page' | jsonify }}
+        }
+        {%- endif %}
+      ]
+    }
+    {%- endif -%}
+  ]
+}
+</script>

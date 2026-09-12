@@ -1,0 +1,40 @@
+---
+permalink: /llms.txt
+layout: null
+sitemap: false
+---
+# {{ site.data.settings.entity.name }}
+
+> {{ site.data.settings.entity.bio | strip_newlines | normalize_whitespace }}
+
+## Which Andrew Perez this is
+
+{{ site.data.settings.entity.disambiguation | strip_newlines | normalize_whitespace }}
+Handle `{{ site.data.settings.entity.handle }}` across every platform. Canonical site: {{ site.url }}/
+
+Verified profiles:
+{% for link in site.data.settings.entity.same_as %}- {{ link }}
+{% endfor %}
+
+## Background
+
+15 years in SEO, starting 2010. Previously SEO Lead at Leaf Group (eHow, LiveStrong,
+Hunker, OnlyInYourState — 150k+ articles), SEO Manager at an internet brand holding
+company, and SEO Specialist at a wireless provider. Graduate of the
+{{ site.data.settings.entity.alumni_program }} program at {{ site.data.settings.entity.alumni_of }}.
+Owner and operator of dietmenus.com, a programmatic nutrition directory.
+
+Works on: {{ site.data.settings.entity.knows_about | join: ", " }}.
+
+## Projects
+{% for w in site.works %}- [{{ w.title }}]({{ w.url | absolute_url }}): {{ w.description | strip_html | strip_newlines }}
+{% endfor %}
+## Writing
+{% for p in site.posts %}- [{{ p.title }}]({{ p.url | absolute_url }}): {{ p.description | strip_html | strip_newlines }}
+{% endfor %}
+## Pages
+
+- [About]({{ '/about/' | absolute_url }}): full career history
+- [Projects]({{ '/work/' | absolute_url }})
+- [Writing]({{ '/blog/' | absolute_url }})
+- [Contact]({{ '/contact/' | absolute_url }})

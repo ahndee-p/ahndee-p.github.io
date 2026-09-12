@@ -3,8 +3,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+  {%- comment -%}
+    Every title carries the name. A page titled just "About" gives an AI engine no
+    entity to attach the content to — and with three other Andrew Perezes out there,
+    every page needs to say which one this is.
+  {%- endcomment -%}
+  <title>{% if page.title %}{{ page.title }} – {{ site.data.settings.entity.name }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
+  <meta name="author" content="{{ site.data.settings.entity.name }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.data.settings.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -19,6 +25,12 @@
   <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.title }}{% else %}{{ page.title }} – {{ site.data.settings.title }}{% endif %}">
   <meta property="og:description" content="{% if page.url == "/" %}{{ site.data.settings.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}">
   <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.data.settings.entity.name }}">
+  <meta property="og:type" content="{% if page.collection == 'posts' %}article{% elsif page.url == '/' or page.url contains '/about' %}profile{% else %}website{% endif %}">
+
+  <!-- Entity graph (JSON-LD) -->
+  {% include schema.html %}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">

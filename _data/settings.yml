@@ -27,11 +27,61 @@ menu__settings:
 # Author Settings
 author:
   author__name: Andrew Perez
-  author__bio: SEO leader and GTM engineer who builds AI-native growth systems at scale.
+  author__bio: Technical SEO who builds AI agent systems to run the work — crawls, schema, entities and AI search visibility.
   author__avatar: '/images/andrew.jpeg'
 
+
+#-------------------------------
+# Entity Settings  →  feeds _includes/schema.html (JSON-LD)
+#
+# WHY THIS EXISTS: "Andrew Perez" is a contested name — there are at least three
+# others, one also in marketing/SEO. AI engines and search engines have no way to
+# tell them apart unless this site says so explicitly. `sameAs` is that statement:
+# it asserts that this Andrew Perez is those profiles. Everything below is the
+# single source of truth for identity, so the descriptor can never drift between
+# the title, the meta description, and the structured data.
+#
+# RULE: the descriptor below must appear IDENTICALLY on LinkedIn, GitHub, X, and
+# every repo README. Entity consolidation dies on synonyms.
+entity:
+  name: Andrew Perez
+  handle: andr3wperez           # the real disambiguator — consistent across every profile
+  job_title: Technical SEO Engineer
+  descriptor: agentic technical SEO
+  # One canonical sentence. Reuse verbatim everywhere.
+  bio: Andrew Perez does agentic technical SEO — AI-native search work run by
+    Claude Code agents instead of by hand. 15 years in search, most of it technical.
+  # Specifically for telling the AI engines which Andrew Perez this is.
+  disambiguation: Technical SEO and AI automation engineer based in Portland, Oregon.
+    Not the journalist of the same name.
+  image: '/images/andrew.jpeg'
+  locality: Portland
+  region: OR
+  country: US
+  alumni_of: MIT Professional Education
+  alumni_program: No-Code AI and Machine Learning
+  knows_about:
+    - Technical SEO
+    - Generative engine optimization
+    - Answer engine optimization
+    - Programmatic SEO
+    - Schema.org structured data
+    - Entity SEO
+    - Log file analysis
+    - Site migrations
+    - AI agents
+    - Python
+    - BigQuery
+  # Every owned profile. More verified nodes = better disambiguation.
+  # Keep in sync with `social:` below; this list may be longer (entity-only links).
+  same_as:
+    - https://www.linkedin.com/in/andr3wperez
+    - https://x.com/andr3wperez
+    - https://github.com/ahndee-p
+    - https://www.youtube.com/@venturemedley
+
 social:
-- {icon: "ion-logo-linkedin", link: "http://linkedin.com/in/andr3wperez"}
+- {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/andr3wperez"}
 - {icon: "ion-logo-twitter", link: "https://x.com/andr3wperez"}
 - {icon: "ion-logo-github", link: "https://github.com/ahndee-p"}
 - {icon: "ion-logo-youtube", link: "https://www.youtube.com/@venturemedley"}

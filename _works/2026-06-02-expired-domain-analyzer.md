@@ -5,6 +5,7 @@ category: AI Automation
 date: 2026-06-02 09:00:00 +0000
 role: AI Automation Engineer
 image: /images/expired-domain-analyzer.png
+repo: https://github.com/ahndee-p/expired-domain-analyzer
 ---
 
 Finding good expired domains used to mean hours of manual work — pulling backlink data, eyeballing domain authority scores, trying to figure out whether a domain's links were actually editorial or just directory spam. I built an n8n automation that does all of that end to end, using Moz for backlink data, Firecrawl for scraping, and GPT-4.1 for quality classification.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: SEO leader and GTM engineer with 15 years driving organic growth. I build AI agent systems that scale technical SEO and modern AI search.
+description: 15 years in search, most of it technical. Now I do agentic technical SEO, where the crawls, schema and entity work get run by AI agents instead of by hand.
 permalink: /about/
 image: '/images/ap-lecture.png'
 ---
