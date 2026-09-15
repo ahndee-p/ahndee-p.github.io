@@ -1,0 +1,29 @@
+---
+# Redirect stub. The DietMenus case study used to live here because the entry was repurposed
+# from an old "Music Love Fest" project without renaming the file, which left the site's
+# strongest case study on a URL about a music festival. It now serves at /work/dietmenus.
+#
+# Hand-rolled rather than adding the jekyll-redirect-from plugin: GitHub Pages builds this site
+# with the legacy Jekyll runner, and changing the Gemfile on a working build is a bigger risk
+# than eight lines of HTML. This is the same output that plugin generates — a zero-delay meta
+# refresh plus a canonical pointing at the target.
+#
+# No `noindex` on purpose: it would stop Google from processing the canonical, which is the
+# signal that actually consolidates the old URL into the new one.
+permalink: /work/music-love-fest
+layout: null
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DietMenus, Programmatic Directory – Andrew Perez</title>
+  <link rel="canonical" href="https://andr3wperez.com/work/dietmenus">
+  <meta http-equiv="refresh" content="0; url=https://andr3wperez.com/work/dietmenus">
+</head>
+<body>
+  <p>This project has moved to
+    <a href="https://andr3wperez.com/work/dietmenus">DietMenus, Programmatic Directory</a>.</p>
+</body>
+</html>

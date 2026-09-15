@@ -6,7 +6,7 @@ permalink: /about/
 image: '/images/ap-lecture.png'
 ---
 
-I’m a technical SEO leader and AI systems architect focused on building the systems that make organic visibility scalable.
+I’m a technical SEO leader focused on building the systems that make organic visibility scalable.
 
 For 15 years, I’ve worked across publishers, marketplaces, and Fortune 500 brands, starting with the technical foundations of SEO: large-scale CMS migrations, crawl architecture, structured data, international and enterprise SEO, and the infrastructure required to make enormous websites discoverable and understandable to search engines.
 
