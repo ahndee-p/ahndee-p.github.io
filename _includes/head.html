@@ -4,6 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {%- comment -%}
+    GA4 goes as high in <head> as possible, per Google's own guidance. The theme had it as the
+    first thing in <body>, which is after this file's large inlined <style> block — late enough
+    to miss hits from anyone who leaves quickly.
+  {%- endcomment -%}
+  {% if site.data.settings.google-analytics %}{% include google-analytics.html %}{% endif %}
+
+  {%- comment -%}
     Every title carries the name. A page titled just "About" gives an AI engine no
     entity to attach the content to — and with three other Andrew Perezes out there,
     every page needs to say which one this is.

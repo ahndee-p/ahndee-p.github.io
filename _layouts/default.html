@@ -5,9 +5,7 @@
 
 <body>
 
-  {% if site.data.settings.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
+  {%- comment -%} GA4 moved into <head> (see _includes/head.html) {%- endcomment -%}
 
   {% include header.html %}
 

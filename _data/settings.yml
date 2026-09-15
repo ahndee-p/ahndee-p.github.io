@@ -296,4 +296,6 @@ disqus:
 
 #-------------------------------
 # Google Analytics
-google-analytics: # Add your GA Tracking Id
+# GA4 measurement ID. This is the gtag.js snippet, not a GTM container — see
+# projects/personal-brand-geo/ notes. Loaded from _includes/google-analytics.html.
+google-analytics: G-N355WH42S5
