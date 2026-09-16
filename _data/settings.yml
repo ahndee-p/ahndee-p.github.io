@@ -110,7 +110,7 @@ entity:
   same_as:
     - https://www.linkedin.com/in/andr3wperez
     - https://x.com/andr3wperez
-    - https://github.com/ahndee-p
+    - https://github.com/andr3wperez
     # The personal channel ("Andrew Perez"), not @venturemedley. Venture Medley is a
     # separate brand entity, so it isn't a `sameAs` for the person. Both verified live
     # 2026-09-11. ⬜ github URL changes to /andr3wperez after the account rename.
@@ -119,7 +119,7 @@ entity:
 social:
 - {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/andr3wperez"}
 - {icon: "ion-logo-twitter", link: "https://x.com/andr3wperez"}
-- {icon: "ion-logo-github", link: "https://github.com/ahndee-p"}
+- {icon: "ion-logo-github", link: "https://github.com/andr3wperez"}
 - {icon: "ion-logo-youtube", link: "https://www.youtube.com/@venturemedley"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
