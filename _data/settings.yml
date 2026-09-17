@@ -83,6 +83,11 @@ entity:
   region: OR
   country: US
   alumni_of: MIT Professional Education
+  alumni_url: https://professional.mit.edu/
+  # MIT Professional Education has no Wikidata item (checked 2026-09-16). MIT does, so the
+  # link to a known entity goes on the parent. Never put Q49108 on alumni_of itself.
+  alumni_parent: Massachusetts Institute of Technology
+  alumni_parent_same_as: https://www.wikidata.org/wiki/Q49108
   alumni_program: No-Code AI and Machine Learning
   # Both the spelled-out phrase and the acronym, in one entry each — people and
   # recruiters search both forms, and separate acronym-only entries read as padding.

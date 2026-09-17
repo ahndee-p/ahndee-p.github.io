@@ -67,9 +67,22 @@
         "addressRegion": {{ e.region | jsonify }},
         "addressCountry": {{ e.country | jsonify }}
       },
+      {%- comment -%}
+        Stable @id so the 13 pages declare one organization, not 13 anonymous copies. MIT
+        Professional Education has no Wikidata item of its own, so no sameAs here: pointing it
+        at MIT's item would say it IS MIT. The tie to a known entity goes through
+        parentOrganization instead, which is literally true.
+      {%- endcomment -%}
       "alumniOf": {
         "@type": "EducationalOrganization",
-        "name": {{ e.alumni_of | jsonify }}
+        "@id": {{ site.url | append: '/#alumni-of' | jsonify }},
+        "name": {{ e.alumni_of | jsonify }},
+        "url": {{ e.alumni_url | jsonify }},
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": {{ e.alumni_parent | jsonify }},
+          "sameAs": {{ e.alumni_parent_same_as | jsonify }}
+        }
       },
       "knowsAbout": {{ e.knows_about | jsonify }},
       "sameAs": {{ e.same_as | jsonify }}
@@ -90,6 +103,7 @@
       "url": {{ page_url | jsonify }},
       "name": {{ page.title | default: site.data.settings.title | jsonify }},
       {% if page.description %}"description": {{ page.description | strip_html | strip_newlines | jsonify }},
+      {% endif %}{% if page.url != '/' %}"breadcrumb": { "@id": {{ page_url | append: '#breadcrumb' | jsonify }} },
       {% endif %}"isPartOf": { "@id": {{ site_id | jsonify }} },
       "inLanguage": "en-US",
       {% if page_type == 'ProfilePage' or page_type == 'AboutPage' %}"mainEntity": { "@id": {{ person_id | jsonify }} }{% else %}"about": { "@id": {{ person_id | jsonify }} }{% endif %}
