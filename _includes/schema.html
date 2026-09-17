@@ -84,7 +84,12 @@
           "sameAs": {{ e.alumni_parent_same_as | jsonify }}
         }
       },
-      "knowsAbout": {{ e.knows_about | jsonify }},
+      "knowsAbout": [
+        {%- for term in e.knows_about %}
+        {% assign wd = e.knows_about_wikidata[term] -%}
+        {%- if wd %}{ "@type": "Thing", "name": {{ term | jsonify }}, "sameAs": {{ wd | jsonify }} }{% else %}{{ term | jsonify }}{% endif %}{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ],
       "sameAs": {{ e.same_as | jsonify }}
     },
     {

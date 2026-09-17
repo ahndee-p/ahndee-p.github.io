@@ -94,6 +94,7 @@ entity:
   knows_about:
     - Agentic Technical SEO      # the coined term, stated first
     - Technical SEO
+    - Search engine optimization  # the parent concept, here because it has a Wikidata item
     - Generative engine optimization (GEO)
     - Answer engine optimization (AEO)
     - LLM visibility
@@ -110,6 +111,19 @@ entity:
     - AI agents
     - Python
     - BigQuery
+  # knows_about term → its Wikidata item. Schema emits a mapped term as a Thing with sameAs,
+  # every other term as plain text. Keys must match the list above exactly, or the mapping
+  # silently drops. Only exact concept matches (checked 2026-09-16): a near miss like
+  # "enterprise search" for Enterprise SEO tells machines he's an expert in something else.
+  # Terms with no item (Technical SEO, Entity SEO, Programmatic SEO...) stay text on purpose.
+  knows_about_wikidata:
+    "Search engine optimization": https://www.wikidata.org/wiki/Q180711
+    "Generative engine optimization (GEO)": https://www.wikidata.org/wiki/Q134083964
+    "Answer engine optimization (AEO)": https://www.wikidata.org/wiki/Q97171941
+    "Schema.org structured data": https://www.wikidata.org/wiki/Q3475322
+    "AI agents": https://www.wikidata.org/wiki/Q132451509
+    "Python": https://www.wikidata.org/wiki/Q28865
+    "BigQuery": https://www.wikidata.org/wiki/Q4904867
   # Every owned profile. More verified nodes = better disambiguation.
   # Keep in sync with `social:` below; this list may be longer (entity-only links).
   same_as:
